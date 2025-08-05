@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👑 EARNING BY HABIN 💸</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+
+    :root {
+      --main-color: #7C4DFF;
+      --gradient: linear-gradient(135deg, #0a192f, #0f3460);
+      --dark-bg: #1a1a2e;
+      --white: #fff;
+      --btn-radius: 8px;
+      --rgb-border: linear-gradient(90deg, #ff00cc, #3333ff, #00ccff, #ff00cc);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--gradient);
+      color: var(--white);
+      min-height: 100vh;
+      overflow-x: hidden;
+      animation: fadeIn 0.8s ease-in-out;
+      background-image: url('https://i.postimg.cc/8PSxjs50/images-18.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-blend-mode: overlay;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: space-between;
+    }
+
+    .logo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .logo-box {
+      background-color: var(--dark-bg);
+      border-radius: 12px;
+      padding: 8px 18px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      animation: float 3s ease-in-out infinite;
+      border: 2px solid transparent;
+      background-clip: padding-box;
+      position: relative;
+    }
+
+    .logo-box::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 12px;
+      background: var(--rgb-border);
+      background-size: 400% 400%;
+      z-index: -1;
+      animation: rgbBorder 3s linear infinite;
+    }
+
+    .logo-text {
+      font-size: 1.2em;
+      font-weight: 800;
+      color: var(--white);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      object-fit: cover;
+      margin-bottom: 10px;
+      position: relative;
+      animation: profileBorder 4s linear infinite;
+      box-shadow: 0 0 20px rgba(124, 77, 255, 0.5);
+    }
+
+    @keyframes profileBorder {
+      0% { border-color: #ff00cc; }
+      25% { border-color: #3333ff; }
+      50% { border-color: #00ccff; }
+      75% { border-color: #ff00cc; }
+      100% { border-color: #3333ff; }
+    }
+
+    .profile h1 {
+      font-size: 1.4em;
+      margin: 0;
+    }
+
+    .profile p {
+      font-size: 14px;
+      opacity: 0.8;
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: auto;
+      width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+      border-radius: var(--btn-radius);
+      font-weight: bold;
+      font-size: 14px;
+      color: var(--white);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      border: 2px solid rgba(255,255,255,0.3);
+      background-clip: padding-box;
+      position: relative;
+      animation: btnFadeIn 0.5s ease-out forwards;
+      opacity: 0;
+    }
+
+    .btn:nth-child(1) { animation-delay: 0.3s; }
+    .btn:nth-child(2) { animation-delay: 0.4s; }
+    .btn:nth-child(3) { animation-delay: 0.5s; }
+    .btn:nth-child(4) { animation-delay: 0.6s; }
+
+    @keyframes btnFadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: var(--btn-radius);
+      background: var(--rgb-border);
+      background-size: 400% 400%;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .btn:hover::before {
+      opacity: 1;
+      animation: rgbBorder 3s linear infinite;
+    }
+
+    @keyframes rgbBorder {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .btn i {
+      margin-right: 8px;
+    }
+
+    .btn-telegram {
+      background: #0088cc;
+    }
+
+    .btn-app {
+      background: #FF5722;
+    }
+
+    .btn-alt1 {
+      background: #009688;
+    }
+
+    .btn-alt2 {
+      background: #4CAF50;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      border-color: rgba(255,255,255,0.7);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+      padding-bottom: 80px;
+    }
+
+    .social-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      animation: socialFadeIn 0.8s ease-out forwards;
+      opacity: 0;
+      animation-delay: 0.8s;
+    }
+
+    @keyframes socialFadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .social-icon:hover {
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    .facebook {
+      background: linear-gradient(135deg, #1877f2, #0d5cb6);
+    }
+
+    .youtube {
+      background: linear-gradient(135deg, #ff0000, #cc0000);
+    }
+    
+    .instagram {
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    }
+    
+    .tiktok {
+      background: linear-gradient(135deg, #010101, #69c9d0, #ee1d52);
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      opacity: 0.6;
+      margin-top: -90px;
+      padding-bottom: 20px;
+    }
+
+    /* Background effect */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(124, 77, 255, 0.1) 0%, transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(0, 188, 212, 0.1) 0%, transparent 30%);
+      z-index: -1;
+      animation: bgPulse 15s infinite alternate;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        linear-gradient(45deg, rgba(255,0,204,0.03) 0%, rgba(51,51,255,0.03) 50%, rgba(0,204,255,0.03) 100%);
+      z-index: -1;
+      animation: bgMove 20s linear infinite;
+    }
+
+    @keyframes bgPulse {
+      0% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 100% 100%; }
+    }
+
+    .bubble {
+      position: fixed;
+      border-radius: 50%;
+      background: rgba(124, 77, 255, 0.1);
+      animation: floatBubble 15s infinite linear;
+      z-index: -1;
+      filter: blur(2px);
+    }
+
+    @keyframes floatBubble {
+      0% { transform: translateY(0) translateX(0); opacity: 0; }
+      50% { opacity: 0.3; }
+      100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-section">
+      <div class="logo-box">
+        <div class="logo-text">👑 𝐄𝐀𝐑𝐍𝐈𝐍𝐆 𝐁𝐘 𝐇𝐀𝐁𝐈𝐁 💸</div>
+      </div>
+    </div>
+
+    <div class="profile">
+      <img src="https://i.postimg.cc/TPRjHBTz/FB-IMG-1732673811660.jpg" alt="Profile Picture">
+      <h1>𝐇𝐀𝐁𝐈𝐁_𝐒𝐈𝐊𝐃𝐀𝐑 👑</h1>
+      <p>🎯 Digital Marketing Expert & Telegram Growth Strategist</p>
+      <p>🚀 Helping entrepreneurs simplify and scale their online income journey.</p>
+    </div>
+
+    <div class="btn-container">
+      <a href="https://t.me/earningbyhabib" class="btn btn-telegram" target="_blank">
+        <i class="fab fa-telegram"></i> Telegram Channel
+      </a>
+      <a href="https://t.me/Earningbyhabib_CEO" class="btn btn-telegram" target="_blank">
+        <i class="fab fa-telegram"></i> My Telegram ID
+      </a>
+      <a href="https://www.appcreator24.com/app3408450-v7l4p6" class="btn btn-app" target="_blank">
+        <i class="fas fa-mobile-alt"></i> My Mobile App
+      </a>
+      <a href="https://wa.me/8801601735574" class="btn btn-alt2" target="_blank">
+        <i class="fab fa-whatsapp"></i> Contact Me
+      </a>
+    </div>
+
+
+    <div class="social-icons">
+      <a href="https://facebook.com/yt.habibullah" class="social-icon facebook" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://youtube.com/earningbyhabib" class="social-icon youtube" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://instagram.com/earningbyhabib" class="social-icon instagram" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://tiktok.com/@earningbyhabib" class="social-icon tiktok" target="_blank">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+  </div>
+<div class="footer">
+      &copy; 2025 Earning by Habin. All rights reserved.
+    </div>
+  <script>
+    // Create floating bubbles for background
+    document.addEventListener('DOMContentLoaded', function() {
+      const body = document.body;
+      for (let i = 0; i < 20; i++) {
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble');
+        
+        // Random size between 30px and 120px
+        const size = Math.random() * 90 + 30;
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+        
+        // Random position
+        bubble.style.left = `${Math.random() * 100}%`;
+        bubble.style.bottom = `-${size}px`;
+        
+        // Random animation duration
+        const duration = Math.random() * 20 + 10;
+        bubble.style.animationDuration = `${duration}s`;
+        
+        // Random delay
+        const delay = Math.random() * 15;
+        bubble.style.animationDelay = `${delay}s`;
+        
+        // Random blur
+        const blur = Math.random() * 3 + 1;
+        bubble.style.filter = `blur(${blur}px)`;
+        
+        body.appendChild(bubble);
+      }
+    });
+  </script>
+</body>
+</html>
