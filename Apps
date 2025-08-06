@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>EARNING BY HABIB</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+    :root {
+      --main-color: #7C4DFF;
+      --white: #fff;
+      --text-light: rgba(255,255,255,0.8);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://i.postimg.cc/8PSxjs50/images-18.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: var(--white);
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    /* প্রোফাইল সেকশন */
+    .profile-section {
+      text-align: center;
+      margin: 30px 0;
+      position: relative;
+    }
+
+    .profile-img-container {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      border-radius: 50%;
+      padding: 5px;
+      background: linear-gradient(45deg, #7C4DFF, #FFC107);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+
+    .profile-name {
+      font-size: 1.4em;
+      margin-top: 15px;
+      font-weight: 600;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    .profile-title {
+      font-size: 14px;
+      color: var(--text-light);
+      margin-top: 5px;
+    }
+
+    /* অ্যাপস গ্রিড */
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin: 20px 0;
+      padding: 0 5px;
+    }
+
+    .app-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 15px 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(5px);
+    }
+
+    .app-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 12px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .app-name {
+      font-weight: 500;
+      font-size: 13px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .action-btn {
+      background-color: var(--main-color);
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 15px;
+      font-size: 12px;
+      font-weight: 500;
+      width: 100%;
+      max-width: 100px;
+      transition: all 0.3s;
+    }
+
+    .action-btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* ফুটার */
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: auto;
+      padding: -40px 0 10px;
+    }
+
+    /* মোবাইল রেস্পন্সিভ */
+    @media (max-width: 400px) {
+      .profile-img-container {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .profile-name {
+        font-size: 1.2em;
+      }
+      
+      .app-grid {
+        gap: 12px;
+      }
+      
+      .app-card {
+        padding: 12px 8px;
+      }
+      
+      .app-icon {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- প্রোফাইল সেকশন -->
+    <div class="profile-section">
+      <div class="profile-img-container">
+        <img src="https://i.postimg.cc/TPRjHBTz/FB-IMG-1732673811660.jpg" alt="Profile" class="profile-img">
+      </div>
+      <h1 class="profile-name">হাবিব শিকদার</h1>
+      <p class="profile-title">ডিজিটাল মার্কেটিং এক্সপার্ট</p>
+    </div>
+
+    <!-- অ্যাপস গ্রিড -->
+    <div class="app-grid">
+      <!-- অ্যাপ ১ -->
+      <a href="https://drive.usercontent.google.com/download?id=17xH0VnAJgL-OvaPuWnUYaaNiYFcGeM7b&export=download&authuser=0" class="app-card" target="_blank">
+        <img src="https://i.postimg.cc/GmvP3xfV/1754455664769.png" alt="Telegram" class="app-icon">
+        <div class="app-name">𝐅𝐫𝐞𝐞 𝐈𝐧𝐜𝐨𝐦𝐞𝟐𝟒</div>
+        <button class="action-btn">𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝📥</button>
+      </a>
+      
+      <!-- অ্যাপ ২ -->
+      <a href="https://drive.usercontent.google.com/download?id=15wWeqzLQJKOFxPhWPym4wgDG9CYrDf21&export=download&authuser=0" class="app-card" target="_blank">
+        <img src="https://i.postimg.cc/VLBbkxC8/3408450-ico.png" alt="Mobile App" class="app-icon">
+        <div class="app-name">𝐅𝐁 𝐌𝐚𝐫𝐤𝐞𝐭𝐢𝐧𝐠</div>
+        <button class="action-btn">𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝📥</button>
+      </a>
+      
+      <!-- অ্যাপ ৩ -->
+      <a href="https://drive.usercontent.google.com/download?id=1UwrAzrkHarxqfaBKh3YHBwQXr16Rpxyu&export=download&authuser=0" class="app-card" target="_blank">
+        <img src="https://i.postimg.cc/6QVPj57P/3499864-ico.png" alt="YouTube" class="app-icon">
+        <div class="app-name">𝐅𝐁 𝐁𝐲 𝐄𝐁𝐇</div>
+        <button class="action-btn">𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝📥</button>
+      </a>
+      
+      <!-- অ্যাপ ৪ -->
+      <a href="https://drive.usercontent.google.com/download?id=1RlUU8HwpUdz1G6ZB_gra4NtJFmpNU-WD&export=download&authuser=0" class="app-card" target="_blank">
+        <img src="https://i.postimg.cc/L4Gr87MN/3674071-ico.png" alt="Facebook" class="app-icon">
+        <div class="app-name">𝐄𝐁𝐇 𝐄𝐦𝐚𝐢𝐥</div>
+        <button class="action-btn">𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝📥</button>
+      </a>
+      
+      <!-- অ্যাপ ৫ -->
+      <a href="https://t.me/earningbyhabib" class="app-card" target="_blank">
+        <img src="https://i.postimg.cc/TPScJz0s/images-12.png" alt="Help Center" class="app-icon">
+        <div class="app-name">𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐂𝐡𝐚𝐧𝐧𝐞𝐥</div>
+        <button class="action-btn">𝐉𝐨𝐢𝐧 𝐍𝐨𝐰</button>
+      </a>
+      
+      <!-- অ্যাপ ৬ -->
+      <a href="https://wa.me/8801601735574" class="app-card" target="_blank">
+        <img src="https://i.postimg.cc/YSgvTTkZ/images-20.jpg" alt="About" class="app-icon">
+        <div class="app-name">𝐀𝐝𝐦𝐢𝐧 𝐈𝐃</div>
+        <button class="action-btn">𝐂𝐨𝐧𝐭𝐮𝐜𝐭</button>
+      </a>
+    </div>
+
+    <!-- ফুটার -->
+    <div class="footer">
+      &copy; 2025 EARNING BY HABIB. All Rights Reserved.
+    </div>
+  </div>
+</body>
+</html>
